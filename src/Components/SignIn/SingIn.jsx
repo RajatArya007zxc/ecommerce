@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import FormInput from '../FormInput/FormInput';
+import './style.scss'
 export default class SingIn extends Component {
 
     constructor(props) {
@@ -32,11 +33,11 @@ handleChange=event=>{
                 {/* Form  */}
 
                 <form onSubmit={this.handleSubmit}>
-                    <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-                     <label>EMAIL</label>
+                    <FormInput type="email" label="email" name="email" value={this.state.email} handleChange={this.handleChange} required />
+                 
 
-                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-                    <label>PASSWORD</label>
+                    <FormInput type="password" label="password" name="password" value={this.state.password} handleChange={this.handleChange} required />
+                    
 
 
                     <input type="submit" value="Submit Form" />
