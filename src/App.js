@@ -15,7 +15,9 @@ export default class App extends React.Component {
  
     constructor(){
         super()
-        this.state={}
+        this.state={
+            currentUser:null
+        }
     }
 unsubscribeFromAuth=null;
 
@@ -26,14 +28,16 @@ componentDidMount(){
          console.log(user)
      })
 }
+ 
 componentWillUnmount(){
     this.unsubscribeFromAuth();
 }
+
     render() {
         return (
             <div >
             {/* <HomePage/> */}
-            <Headercompoent/>
+            <Headercompoent  currentUser={this.state.currentUser}/>
             <Switch >
              <Route  exact path="/" component={HomePage}/>
              <Route  path="/shop" component={ShopComponent} />

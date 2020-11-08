@@ -40,11 +40,15 @@ handleChange=event=>{
 
                     <FormInput type="password" label="password" name="password" value={this.state.password} handleChange={this.handleChange} required />
                     
+ <div className="buttons">
 
+ <Button type="submit" >Sign In</Button>
+        <Button  onClick={signInWithGoogle} isGoogleSignIn >Goggle</Button>
+     
 
-                    <Button type="submit" >Sign In</Button>
-        <Button type="submit" onClick={signInWithGoogle} >Sign In with Goggle</Button>
-                </form>
+ </div>
+
+                           </form>
             </div>
         )
     }
