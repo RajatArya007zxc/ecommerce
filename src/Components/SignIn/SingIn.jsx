@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { signInWithGoogle } from '../../firebase/firebase.utilse';
 import Button from '../CustomButton/Button';
 import FormInput from '../FormInput/FormInput';
 import './style.scss'
@@ -42,6 +43,7 @@ handleChange=event=>{
 
 
                     <Button type="submit" >Sign In</Button>
+        <Button type="submit" onClick={signInWithGoogle} >Sign In with Goggle</Button>
                 </form>
             </div>
         )
