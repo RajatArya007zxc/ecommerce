@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '../CustomButton/Button';
 import FormInput from '../FormInput/FormInput';
 import './style.scss'
 export default class SingIn extends Component {
@@ -40,7 +41,7 @@ handleChange=event=>{
                     
 
 
-                    <input type="submit" value="Submit Form" />
+                    <Button type="submit" >Sign In</Button>
                 </form>
             </div>
         )
