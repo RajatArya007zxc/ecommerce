@@ -4,6 +4,7 @@ import './App.css';
 import Headercompoent from './Components/Header/Headercompoent';
 import HomePage from './Pages/Homepage/HomePage.components';
 import ShopComponent from './Pages/ShopData/ShopComponent';
+import inOut from './Pages/signIn&SignUp/inOut';
 
 
 
@@ -18,6 +19,7 @@ function App() {
      <Switch >
       <Route  exact path="/" component={HomePage}/>
       <Route  path="/shop" component={ShopComponent} />
+      <Route  path="/signin" component={inOut} />
      </Switch>
 
     </div>
