@@ -58,7 +58,8 @@ componentWillUnmount(){
         return (
             <div >
             {/* <HomePage/> */}
-            <Headercompoent  currentUser={this.state.currentUser}/>
+           {/* <Headercompoent  currentUser={this.state.currentUser}/> */}
+            <Headercompoent />
             <Switch >
              <Route  exact path="/" component={HomePage}/>
              <Route  path="/shop" component={ShopComponent} />
